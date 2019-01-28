@@ -2,7 +2,9 @@
   <div class="hello">
     <h1>{{ message }}</h1>
     <br />
-    <button @click="fetchMessage()">Fetch</button>
+    <form @submit.prevent="fetchMessage()">
+      <button type="submit">Fetch</button>
+    </form>
   </div>
 </template>
 
